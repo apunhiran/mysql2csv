@@ -33,7 +33,8 @@ The requiement was to dump the data on the client system.
 
 * Export the output of a sql:
 
-```-bash-4.1$ more site.sql
-select publisher_id,name,status from site```
+```-bash-4.1$ more site.sql```
+
+```select publisher_id,name,status from site```
 
 ```mysql2csv.pl -h gq1-mb-db2.data.gq1.yahoo.com -port 3306 -d mb -u uad -p <xyz> -s site.sql -o site.csv```
