@@ -1,4 +1,5 @@
-# mysql2csv: Perl script to export mysql table/sql into CSV file
+# mysql2csv: 
+###### Perl script to export mysql table/sql into CSV file
 
 ## USAGE: ```mysql2csv.pl -h <hostname> -port <port number> -d <DB name> -u <username> -p <password> -s <sql file> | -t <table name> -o <output filename>```
 
@@ -29,11 +30,13 @@ Arguments:
 ```mysql2csv -h gq1-mb-db2.data.gq1.yahoo.com -port 3306 -d mb -u uad -p <xyz> -t ad -o ad_2014011518.csv```
 
 * Export the output of a sql:
+
 ```-bash-4.1$ more site.sql
 select publisher_id,name,status from site
 
-mysql2csv.pl -h gq1-mb-db2.data.gq1.yahoo.com -port 3306 -d mb -u uad -p <xyz> -s site.sql -o site.csv
-```
+mysql2csv.pl -h gq1-mb-db2.data.gq1.yahoo.com -port 3306 -d mb -u uad -p <xyz> -s site.sql -o site.csv```
+
+
 Perl required modules:
 - perl
 - perl-DBI
